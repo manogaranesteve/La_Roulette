@@ -64,9 +64,9 @@ int	main()
       my_putstr("\e[34m =========================== \e[39m");
       if (rando == (my_getnbr(num)))
       {
-        gain = my_getnbr(mise) * 3;
         my_putstr("\n\t\t \033[31m Vous avez Gagner ! \033[0m \n");
-        my_putstr(mise);
+        my_putstr("\n\t\t \033[31m Vous avez tiré le bon chiffre !\033[0m ");
+        gain = my_getnbr(mise) * 3;
       }
       else if ((my_is_odd(rando) == 1) && (my_is_odd(my_getnbr(num)) == 1))
       {
